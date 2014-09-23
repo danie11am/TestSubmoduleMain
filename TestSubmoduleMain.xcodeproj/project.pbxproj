@@ -14,6 +14,7 @@
 		AB50BD7419D1B01F006A8BA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB50BD7319D1B01F006A8BA1 /* Images.xcassets */; };
 		AB50BD7719D1B01F006A8BA1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB50BD7519D1B01F006A8BA1 /* LaunchScreen.xib */; };
 		AB50BD8319D1B01F006A8BA1 /* TestSubmoduleMainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB50BD8219D1B01F006A8BA1 /* TestSubmoduleMainTests.m */; };
+		ABCE66F319D1CC33005B4BC0 /* libTestSubmoduleCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCE66F019D1CAAF005B4BC0 /* libTestSubmoduleCore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = AB50BD6219D1B01F006A8BA1;
 			remoteInfo = TestSubmoduleMain;
+		};
+		ABCE66EF19D1CAAF005B4BC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABCE66EA19D1CAAE005B4BC0 /* TestSubmoduleCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABAD1E6119D1C6FD00CE720A;
+			remoteInfo = TestSubmoduleCore;
+		};
+		ABCE66F119D1CAAF005B4BC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABCE66EA19D1CAAE005B4BC0 /* TestSubmoduleCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABAD1E6C19D1C6FD00CE720A;
+			remoteInfo = TestSubmoduleCoreTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +55,7 @@
 		AB50BD7C19D1B01F006A8BA1 /* TestSubmoduleMainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSubmoduleMainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB50BD8119D1B01F006A8BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB50BD8219D1B01F006A8BA1 /* TestSubmoduleMainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSubmoduleMainTests.m; sourceTree = "<group>"; };
+		ABCE66EA19D1CAAE005B4BC0 /* TestSubmoduleCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestSubmoduleCore.xcodeproj; path = ../TestSubmoduleCore/TestSubmoduleCore.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCE66F319D1CC33005B4BC0 /* libTestSubmoduleCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +83,7 @@
 				AB50BD6519D1B01F006A8BA1 /* TestSubmoduleMain */,
 				AB50BD7F19D1B01F006A8BA1 /* TestSubmoduleMainTests */,
 				AB50BD6419D1B01F006A8BA1 /* Products */,
+				ABCE66EA19D1CAAE005B4BC0 /* TestSubmoduleCore.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +135,15 @@
 				AB50BD8119D1B01F006A8BA1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABCE66EB19D1CAAE005B4BC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABCE66F019D1CAAF005B4BC0 /* libTestSubmoduleCore.a */,
+				ABCE66F219D1CAAF005B4BC0 /* TestSubmoduleCoreTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +213,12 @@
 			mainGroup = AB50BD5A19D1B01F006A8BA1;
 			productRefGroup = AB50BD6419D1B01F006A8BA1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ABCE66EB19D1CAAE005B4BC0 /* Products */;
+					ProjectRef = ABCE66EA19D1CAAE005B4BC0 /* TestSubmoduleCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AB50BD6219D1B01F006A8BA1 /* TestSubmoduleMain */,
@@ -193,6 +226,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		ABCE66F019D1CAAF005B4BC0 /* libTestSubmoduleCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTestSubmoduleCore.a;
+			remoteRef = ABCE66EF19D1CAAF005B4BC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ABCE66F219D1CAAF005B4BC0 /* TestSubmoduleCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TestSubmoduleCoreTests.xctest;
+			remoteRef = ABCE66F119D1CAAF005B4BC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AB50BD6119D1B01F006A8BA1 /* Resources */ = {
@@ -414,6 +464,7 @@
 				AB50BD8819D1B01F006A8BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB50BD8919D1B01F006A8BA1 /* Build configuration list for PBXNativeTarget "TestSubmoduleMainTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +473,7 @@
 				AB50BD8B19D1B01F006A8BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
