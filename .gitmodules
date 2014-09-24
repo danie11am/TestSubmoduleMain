@@ -1,0 +1,3 @@
+[submodule "External/TestSubmoduleCore"]
+	path = External/TestSubmoduleCore
+	url = git@github.com:danie11am/TestSubmoduleCore.git
